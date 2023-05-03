@@ -156,7 +156,7 @@ Take a look at the `tool-examples` directory  for other tools.
 ## Agent communication
 If you declare multiple agents in your configuration you can enable communication with each other. The agent may try to establish communication with another agent if it thinks it will help him complete a task.
 
-You can enable communication be setting `canCommunicateWithAgents` to either `true` if you want the agent to be able to communicate with every other agent or pass an array of the names of the agents it is allowed to talk to (`['Mr_Chef', 'Artist']`).
+You can enable communication be setting `communicationWhitelist` to either `true` if you want the agent to be able to communicate with every other agent or pass an array of the names of the agents it is allowed to talk to (`['Mr_Chef', 'Artist']`).
 
 Note: Even if continuous mode is set to false if an agent who is being talked to tries to use a tool it will not ask the user first. I need to rework how continuous mode is implemented.
 
